@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+    font-size: 1.8em;
+}
+
+
+.nav {
+    background-color: #480057;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.pokeball-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 50px;
+}
+
+
+.page {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+
+.pokedex-grid {
+    display: flex;
+    justify-content: center;
+    width: 53%;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 50px;
+}
+
+.pokemon-grid {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.pokemon-card {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 30%;
+    border-radius: 20px;
+    background-color: #875ee680;
+    text-align: center;
+    gap: 15px;
+    transition: 0.5s all;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pokemon-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgb(238, 255, 0);
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.poke-image {
+    width: 180px;
+    height: 180px;
+}
+
+
+.card-body {
+    padding: 15px;
+}
+
+
+.poke-id {
+    font-size: 14px;
+    color: #444;
+}
+
+.poke-name {
+    font-size: 24px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+.type-badge {
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #c441f8;
+    margin-right: 4px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+
+.abilities {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+
+.type-bug {
+    background-color: #50dfa8;
+}
+
+.type-poison {
+    background-color: #71c1cf;
+}
+
+.type-flying {
+    background-color: #ffffff;
+}
+
+.type-grass {
+    background-color: #21e0d7;
+}
+
+.type-normal {
+    background-color: #ffffff;
+}
+
+.type-ground {
+    background-color: #613921;
+}
+
+.type-psychic {
+    background-color: #874d99;
+}
+
+.type-fairy {
+    background-color: #ffffff;
+}
+
+.type-rock {
+    background-color: #b8a038;
+}
+
+.type-ice {
+    background-color: #b8b8d0;
+}
+.type-water {
+    background-color: #705898;
+}
+
+
+
+.stats-wrapper {
+    margin-top: 10px;
+}
+
+.stat-line {
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.stat-value {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.progress-bg {
+    background: #eee;
+    height: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #480057;
+}
+ 
+@media (max-width: 1200px) {
+  
+    .pokedex-grid {
+        width: 80%; 
+        gap: 30px;
+    }
+
+   
+}
+
+@media (max-width: 992px) {
+   
+    .nav {
+        padding: 15px 10px;
+    }
+    
+    .logo {
+        font-size: 1.2em;
+    }
+ 
+    .menu a {
+        padding: 10px 15px;
+        font-size: 1.1em;
+    }
+
+  
+    .pokedex-grid, .pokemon-grid {
+        width: 90%; 
+        gap: 20px;
+    }
+
+    .pokemon-card {
+        width: 45%; 
+        margin-top: 20px;
+    }
+
+    .poke-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .h1 {
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 15px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .menu ul {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center; 
+        margin-bottom: 5px; 
+    }
+
+    .menu a {
+        display: block; 
+        padding: 10px 0;
+        border-bottom: 1px solid #004d80; 
+    }
+    
+  
+    .menu li:last-child a {
+        border-bottom: none;
+    }
+
+    .pokedex-grid, .pokemon-grid {
+        width: 95%; 
+    }
+
+    .pokemon-card {
+        width: 90%; 
+      
+    }
+
+    .h1 {
+        font-size: 1.8em;
+    }
+    
+    .poke-name {
+        font-size: 20px;
+    }
+
+    .poke-image {
+        width: 120px;
+        height: 120px;
+    }
+}
